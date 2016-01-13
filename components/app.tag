@@ -1,5 +1,3 @@
-import riot from 'riot';
-
 <app>
     <h1>{ name }</h1>
     <div>
