@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm install",
+    "postinstall": "jspm install",
+    "start": "live-server"
   },
   "keywords": [],
   "author": "Ben Sparks <bsparks42@gmail.com> (https://github.com/bsparks)",
@@ -14,7 +16,8 @@
   },
   "jspm": {
     "dependencies": {
-      "riot": "npm:riot@^2.3.11"
+      "riot": "npm:riot@^2.3.11",
+      "tag": "npm:jspm-plugin-riot@^1.0.0"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
